@@ -2,6 +2,11 @@ import { Sparkle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+const HeroMessage = [
+  "Sync할 Tier 1 미러를 더 빠르게",
+  "내가 원하는 국가의 미러만 빠르게 확인하기"
+]
+
 export default function Hero() {
   return (
     <div

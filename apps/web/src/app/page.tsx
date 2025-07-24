@@ -1,5 +1,4 @@
 import HeroSection from "@/components/ROKFOSS/hero";
-import MirrorTable from "@/components/Table";
 import { Card, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,32 +8,7 @@ const mirrorList = [
     name: "archlinux",
     displayName: "Arch Linux",
     color: "#1793D1",
-  },
-  {
-    name: "archlinux",
-    displayName: "Arch Linux",
-    color: "#1793D1",
-  },
-  {
-    name: "archlinux",
-    displayName: "Arch Linux",
-    color: "#1793D1",
-  },
-  {
-    name: "archlinux",
-    displayName: "Arch Linux",
-    color: "#1793D1",
-  },
-  {
-    name: "archlinux",
-    displayName: "Arch Linux",
-    color: "#1793D1",
-  },
-  {
-    name: "archlinux",
-    displayName: "Arch Linux",
-    color: "#1793D1",
-  },
+  }
 ];
 
 export default function Home() {

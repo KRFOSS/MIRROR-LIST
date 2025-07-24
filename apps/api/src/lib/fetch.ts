@@ -1,5 +1,6 @@
 const urls = {
     "archlinux": "https://archlinux.org/mirrors/status/json/",
+    
 }
 
 export async function fetchMirrorList(mirror: keyof typeof urls, json: boolean = false): Promise<any> {

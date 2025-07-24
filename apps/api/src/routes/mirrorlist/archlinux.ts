@@ -46,6 +46,12 @@ const archlinux = new Elysia({ prefix: "/archlinux" })
 
         cache.set("archlinux-status", { data: mirrorsByCountry, timestamp: now });
         return mirrorsByCountry;
+    }, {
+        detail: {
+            "summary": "Fetch Arch Linux Mirrors",
+            "description": "Fetches the list of Arch Linux mirrors from the official Arch Linux mirror list.",
+            "tags": ["Arch Linux"],
+        }
     });
 
 export default archlinux;

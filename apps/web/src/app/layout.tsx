@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/ROKFOSS/header";
 import Footer from "@/components/ROKFOSS/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import "./rokfoss.css";
 
 export const metadata: Metadata = {
   title: "KRFOSS Mirror List",
@@ -18,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
-        <link rel="stylesheet" href="https://cdn.krfoss.org/web/main.css" />
-        <link rel="stylesheet" href="https://http.krfoss.org/.web/http.css" />
+        {/* <link rel="stylesheet" href="https://cdn.krfoss.org/web/main.css" />
+        <link rel="stylesheet" href="https://http.krfoss.org/.web/http.css" /> */}
       </head>
       <body className="antialiased">
         <ThemeProvider

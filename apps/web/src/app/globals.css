@@ -122,7 +122,6 @@
 }
 
 .eliv-logo {
-
   transition: filter 0.3s ease;
   filter: invert(1) brightness(2);
 }
@@ -131,9 +130,4 @@
     vertical-align: auto !important;
     display: auto !important;
   }
-}
-
-* {
-  margin: auto !important;
-  padding: auto !important;
 }
