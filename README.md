@@ -27,7 +27,8 @@ OPNSense - 🤮
 Rocky Linux
 * https://mirrors.rockylinux.org/mirrormanager/mirrors
 
-Proxmox?? - 미러를 공식에서 안밀고 있음
+Proxmox
+* <https://http.krfoss.org>
 
 ---
 
