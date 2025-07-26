@@ -8,24 +8,34 @@ const mirrorList = [
     name: "archlinux",
     displayName: "Arch Linux",
     color: "#1793D1",
-  }
+  },
+  {
+    name: "ubuntu",
+    displayName: "Ubuntu",
+    color: "#E95420",
+  },
+  {
+    name: "ubuntu-cd",
+    displayName: "Ubuntu CD",
+    color: "#E95420",
+  },
 ];
 
 export default function Home() {
   return (
-    <div className="content-section">
+    <div className="content-section flex flex-col items-center justify-center">
       <HeroSection />
       <div
         id="mirrorlist"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-8 max-w-[800px] mx-auto !mb-8"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-[800px] !mb-8 !mx-4"
       >
         {mirrorList.map((distro) => (
           <Card key={distro.name}>
             <Link
               href={`/mirrorlist/${distro.name}`}
-              className="flex flex-col items-center justify-center h-full !mx-4 !my-4"
+              className="flex flex-col items-center justify-center h-full !mx-4 !my-2"
             >
-              <CardTitle className="flex flex-row p-8 gap-4">
+              <CardTitle className="flex flex-row p-2 gap-4">
                 <Image
                   src={`/distro/${distro.name}.svg`}
                   alt={`${distro.name} logo`}

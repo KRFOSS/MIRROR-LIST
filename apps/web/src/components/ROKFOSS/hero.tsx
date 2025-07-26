@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
         <span className="font-medium">ROKFOSS 분산 미러와 함께합니다.</span>
       </Link>
-      <h1 className="text-4xl font-extrabold !mt-8">
+      <h1 className="md:text-4xl text-3xl font-extrabold !mt-8">
         Sync할 Tier 1 미러를 더 빠르게
       </h1>
       <p>전세계에 있는 모든 미러를 한곳에서 확인하세요.</p>
