@@ -1,8 +1,12 @@
 import ArchMirrorTable from "@/components/Table/ArchLinux";
+import UbuntuArchiveMirrorTable from "@/components/Table/Ubuntu/Archive";
+import UbuntuCDMirrorTable from "@/components/Table/Ubuntu/CD";
 import { JSX } from "react";
 
 const distro: Record<string, JSX.Element> = {
-  "archlinux": <ArchMirrorTable />
+  "archlinux": <ArchMirrorTable />,
+  "ubuntu-cd": <UbuntuCDMirrorTable />,
+  "ubuntu": <UbuntuArchiveMirrorTable />
 }
 
 export default async function Page({

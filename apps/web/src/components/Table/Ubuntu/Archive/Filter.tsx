@@ -1,3 +1,6 @@
+// Filter.tsx
+// 수정할 내용 없음. 기존 코드와 동일합니다.
+
 import React, { useId, useMemo } from "react";
 import { Column } from "@tanstack/react-table";
 import {
@@ -57,7 +60,7 @@ export default function Filter({ column }: { column: Column<any, unknown> }) {
                                 old?.[1],
                             ])
                         }
-                        placeholder={`최소 ${min !== undefined ? `(${min.toFixed(2)})` : ''}`}
+                        placeholder={`최소`}
                         className="w-24"
                         aria-label={`${columnHeader} 최소값`}
                     />
@@ -74,7 +77,7 @@ export default function Filter({ column }: { column: Column<any, unknown> }) {
                                 e.target.value ? Number(e.target.value) : undefined,
                             ])
                         }
-                        placeholder={`최대 ${max !== undefined ? `(${max.toFixed(2)})` : ''}`}
+                        placeholder={`최대`}
                         className="w-24"
                         aria-label={`${columnHeader} 최대값`}
                     />
